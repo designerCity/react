@@ -1,0 +1,17 @@
+
+create-react-app 으로 리엑트 프로젝트 생성 
+  방법 1
+  폴더 열고 terminal 열고
+  npm init react-app .        이라고 치면
+  . 현재파일에 react 를 실행하겠다는 뜻이다. 
+
+  방법 2 npm init react-app <폴더이름>
+
+  개발 모드 실행 
+  npm run start 
+
+개발 모드 닫기 
+Ctrl C
+
+
+react 개발자 도구 (chrome 확장 프로그램 )
