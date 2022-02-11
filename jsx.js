@@ -29,9 +29,27 @@ ReactDOM.render(
 )
 
 
+// JSX 문법으로 html 문법을 작성할 때에는 반드시 하나로 감싸진 태그로 작성을 해야함 
+// div 나 다른 태그로 묶고 싶지 않을 때
+// Fragment 사용 
+
+// 방법
+import { Fragment } from 'react';
+
+
+ReactDOM.render(
+  <Fragment>
+    <p className="hello">안녕 리엑트</p>
+    <label htmlFor="name">이름 </label>
+    <input id="name" type="text"/>
+  </Fragment>,
+  document.getElementById('root')
+);
+// 이렇게 사용하면됨 
 
 // JSX 문법 정리
 //
 // html 에서 class 라는 속성을 사용하려면 className 라는 속성을 작성해야한다. 
 // JSX 문법으로 html for 라는 속성을 사용하려면, htmlFor 라고 작성해야함.
 // html 에서 소문자로 작성하였던 이벤트 핸들러들은 camelCase를 사용해야함 
+// JSX 문법으로 html 문법을 작성할 때에는 반드시 하나로 감싸진 태그로 작성을 해야함 or Fragment 
