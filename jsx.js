@@ -61,5 +61,8 @@ ReactDOM.render(
 //
 // html 에서 class 라는 속성을 사용하려면 className 라는 속성을 작성해야한다. 
 // JSX 문법으로 html for 라는 속성을 사용하려면, htmlFor 라고 작성해야함.
-// html 에서 소문자로 작성하였던 이벤트 핸들러들은 camelCase를 사용해야함 
+// 속성명은 camelCase 로 작성해야한다. (html 에서 소문자로 작성하였던 이벤트 핸들러들은 camelCase를 사용해야함)
+    // ex) onClick, onBlur, onFocus, onMouseDown, onMouseOver, tabIndex 처럼 이벤트 핸들러
+    // except) data-* 속성은 카멜 케이스(Camel Case)가 아니라 기존의 HTML 문법 그대로 작성해야한다. 
+
 // JSX 문법으로 html 문법을 작성할 때에는 반드시 하나로 감싸진 태그로 작성을 해야함 or Fragment 사용으로 불필요한 div 태그를 줄일 수 있다.
