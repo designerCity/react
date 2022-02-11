@@ -17,3 +17,21 @@ ReactDOM.render(<h1 id="hello">Hi React!<h1>, document.getElementById('root'));
 // html 에서 class 라는 속성을 사용하려면 className 라는 속성을 작성해야한다. 
 ReactDOM.render(<h1 className="hello">Hi React!<h1>, document.getElementById('root'));
 
+// for 라는 속성, html 태그는 label 태그에서 input 태그와 함께 사용이 되는데, 이 또한 사용이 불가하다. 
+// 그래서 JSX 문법으로 html for 라는 속성을 사용하려면, htmlFor 라고 작성해야함. 
+
+ReactDOM.render(
+  <form>
+    <label htmlFor="name">이름</label>
+    <input id="name" type="text" onBlur="" onFocus="" onMouseDown=""/> // html 에서 소문자로 작성하였던 이벤트 핸들러들은 camelCase를 사용해야함 
+  </form>,
+  document.getElementById('root')
+)
+
+
+
+// JSX 문법 정리
+//
+// html 에서 class 라는 속성을 사용하려면 className 라는 속성을 작성해야한다. 
+// JSX 문법으로 html for 라는 속성을 사용하려면, htmlFor 라고 작성해야함.
+// html 에서 소문자로 작성하였던 이벤트 핸들러들은 camelCase를 사용해야함 
