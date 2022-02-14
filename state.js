@@ -22,7 +22,6 @@ function App() {
 }
 
 // 최종코드 
-
 import { useState } from 'react'
 import Button from './Button';
 import Dice from './Dice'
@@ -53,4 +52,56 @@ function App() {
 }
 
 export default App;
+
+
+
+// 참조형 state 를 다룰 때 주의사항
+
+import { useState } from 'react'
+import Button from './Button';
+import Dice from './Dice'
+
+function random(n) {
+  return Math.ceil(Math.random() * n);
+}
+function App() {  
+  const [num, setNum] = useState(1);
+  const [sum, setSum] = useState(0);
+  const [gameHistory, setGameHistory] = useState([]);
+  
+  // 추가기능
+  const handleRollClick =() => {
+    const nextNum = random(6);
+    setNum(nextNum);              // 이 두줄을 주석 처리하면 
+    setSum(sum + nextNum)         // gameHistory state 값도 변하지 않는데 그 이유는 배열은 참조형이기 때문이다. 주소값이 바뀌지 않기 때문에 state 가 변경되었다고 판단하지 않는다. 
+                                  // 그래서 배열 객체 같은 참조형type 의 state 를 변경할 때에는 아예 전체를 새로 만든다고 생각하는게 좋음. spread 구문을 활용하는 것이 좋음.
+    setGameHistory([...gameHistory, nextNum]);
+  }
+  // 초기화
+  const resetRollClick =() => {
+    setNum(1);
+    setSum(0);
+    setGameHistory([]);
+  }
+
+  return (
+    <>
+      <div>
+        <Button onClick={ handleRollClick }>던지기</Button>
+        <Button onClick={ resetRollClick }>처음부터</Button>
+      </div>
+      <div>
+        <h2>나</h2>
+        <Dice color="red" num={num} />
+        <h2>sum</h2>
+        <p>{sum}</p>
+        <h2>history</h2>
+        <p>{gameHistory.join(', ')}</p> 
+      </div>
+    </>    
+  )
+}
+// join method 는 argument 전달한 이 값을 배열의 각 요소 사이사이에 넣어서 결과적으로 하나의 문자열을 만들어 주는 method 이다.
+export default App;
+
 
