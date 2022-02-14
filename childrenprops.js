@@ -31,3 +31,11 @@ function App() {
 }
 
 export default App;
+
+
+// onChange : input 태그의 onChange prop
+//            react 에서의 onChange prop : 입력값이 변경될 때마다 이벤트를 받으려면 onChange 이벤트 핸들러 함수로 처리
+//    VS 
+// JS 의 oninput : 입력값이 변경될 때마다 이벤트를 받으려면 oninput 이벤트 핸들러 함수로 처리
+// bet 의 값
+<input type="number" value={bet} min={1} max={9} onChange={handleBetChange}></input> // 이런식으로 표현
