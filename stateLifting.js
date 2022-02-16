@@ -1,5 +1,6 @@
 // state lifting : 자식 component 의 state 들을 부모 component 로 올려 주는 것을 state lifting 이라고 한다. 
 
+
 // Board.js 파일을 
 import { useState } from 'react'
 import Button from './Button';
@@ -55,10 +56,12 @@ function random(n) {
 }
 
 function App() {
+  
   // 나의 state 
   const [num, setNum] = useState(1);
   const [sum, setSum] = useState(0);
   const [gameHistory, setGameHistory] = useState([]);
+  
   // 상대의 state
   const [otherNum, setOtherNum] = useState(1);
   const [otherSum, setOtherSum] = useState(0);
