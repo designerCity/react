@@ -1,15 +1,14 @@
 // component 에서 state 를 사용하기 위해서는 
 import { userState } from 'react'
 
-
 function App() {  
   const [num, setNum] = useState(1); // useState 함수는 파라미터로 초기값을 전달받음
                                      // 이 함수가 실행되면 배열의 형태로 요소 두개를 리턴하게 된다.(state, setter)
                                      // 그래서 destructuring 문법으로 사용해야함.
-//         배열의 첫 번째 요소는 state 값이다. : 현재 변수의 값을 나타내는 것이다. 
-//         배열의 두 번째 요소는 setter 함수이다. : 이 함수는 호출할 때 파라미터로 전달하는 값으로 state 값이 변경이 되는 것이다.
-//                                                 일반적으로 naming 을 state 의 이름 앞에 set 을 붙인 형태로 naming 을 한다.
-//         이렇게 state 의 값을 변경할 때 반드시 setter 함수를 통해서 값을 변경해야한다.
+                                     // 배열의 첫 번째 요소는 state 값이다. : 현재 변수의 값을 나타내는 것이다. 
+                                     // 배열의 두 번째 요소는 setter 함수이다. : 이 함수는 호출할 때 파라미터로 전달하는 값으로 state 값이 변경이 되는 것이다.
+                                     // 일반적으로 naming 을 state 의 이름 앞에 set 을 붙인 형태로 naming 을 한다.
+                                     // 이렇게 state 의 값을 변경할 때 반드시 setter 함수를 통해서 값을 변경해야한다.
   return (
     <>
       <div>
@@ -52,8 +51,6 @@ function App() {
 }
 
 export default App;
-
-
 
 // 참조형 state 를 다룰 때 주의사항
 
@@ -103,5 +100,3 @@ function App() {
 }
 // join method 는 argument 전달한 이 값을 배열의 각 요소 사이사이에 넣어서 결과적으로 하나의 문자열을 만들어 주는 method 이다.
 export default App;
-
-
