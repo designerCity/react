@@ -60,11 +60,13 @@ function App() {
     <div className='App'>
       <h1 className='App-heading'>가위바위보</h1>
       <Button className='App-reset' onClick={handleClearClick}><img className='App-reset' src={ Reset } alt='초기화' /></Button>
+
       <div className='App-scores'>
         <div className='Score'>
           <div className='Score-num'> {score}</div>
           <div className='Score-name'> 나</div>
         </div>
+
         <div className='App-versus'> : </div>
         <div className='Score'>
           <div className='Score-num'> {otherScore}</div>
