@@ -9,9 +9,11 @@
 // 즉, 통째로 다시 rendering 하게 되는 것이다. => 문제점 : 아무 변화가 없어도 다시 렌더링하게 된다. 
 // 이러한 문제점을 해결하기 위해서 react 에서는 JS 의 DOM tree 를 본떠서 만든 Virtual DOM(가상 DOM) 을 활용한다. 
 
+
 // 그래서 element 를 새로 rendering 할때 실제 DOM tree 에 바로 반영하는 것이 아니라, 일단 Virtual DOM 에 적용한다.
 // state 변경 전의 Virtual DOM 과 state 변경 후의 Virtual DOM 을 비교한다.
 // 그래서 바뀐 부분만 찾아서 각각에 해당하는 실제 DOM Node 만을 변경한다.
+
 
 // 이렇게 rendering 하는 것의 장점 
 
