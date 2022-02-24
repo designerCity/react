@@ -1,6 +1,5 @@
 // react 의 inline style 을 html 의 문자열과는 다르게 객체로 스타일 속성값을 지정해줘야 한다. 
 
-
 const style = {
   속성: '값',
   background-color: 'pink', // CSS 에서의 - 기호가 들어간 속성들은 - 기호 없이 CamelCase 로 적어줘야한다. 
