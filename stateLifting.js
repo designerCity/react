@@ -1,7 +1,6 @@
 // state lifting : 자식 component 의 state 들을 부모 component 로 올려 주는 것을 state lifting 이라고 한다. 
 
 
-
 // Board.js 파일을 
 import { useState } from 'react'
 import Button from './Button';
