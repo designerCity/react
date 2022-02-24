@@ -15,8 +15,8 @@ function Button({ children, onClick }) {
   );
 }
 
-export default Button;
 
+export default Button;
 
 // url 속성을 불러올 때
 import backgroundImg from './assets/purple.svg';
