@@ -99,8 +99,6 @@ function App() {
 
 export default App;
 
-
-
 // 디자인을 적용하는 방법
 // 이미지 불러오기
 // 이미지 파일은 import 구문을 통해 불러오고, 불러온 이미지 주소를 src 속성으로 사용하면 됨.
