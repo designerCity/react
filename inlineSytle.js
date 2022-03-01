@@ -8,7 +8,7 @@ const style = {
 function Button({ children, onClick }) {
   return (
 //  <button style={{backgroundColor: 'red'}} onClick={onClick}>  // 이렇게 속성값으로도 적을 수 있다. 중괄호가 두 개인 것 유의 
-                                                                 // 이렇게 적으면 속성 부분의 코드가 복잡해짐 + 가독성이 낮아짐. 
+                                                                 // 이렇게 적으면 속성 부분의 코드가 복잡해지고, + 가독성이 낮아짐. 
     <button style={style} onClick={onClick}> // 객체로 스타일 속성값을 적어준 모습이다.
       {children}
     </button>
