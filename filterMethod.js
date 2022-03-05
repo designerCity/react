@@ -88,3 +88,9 @@ function App() {
 }
 
 export default App;
+
+// 배열 method 에는 반드시 key prop 을 가져야한다. 
+// map method 에서 render 한 child 는 고유한 key prop 을 가져야한다. 
+// 이떄 해당하는 최상위 태그에 key 를 설정해주면 된다. 대부분 json data 의 id 를 사용해주는 게 좋다
+// 배열의 index 를 key 로 사용하면 안되는 이유는 그때그때 배열의 순서에 따라서 바뀌기 때문이다.
+// 즉, DATA 에 부여된 고유한 값이 아니기 때문이다. 
