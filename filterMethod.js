@@ -90,10 +90,12 @@ function App() {
 export default App;
 
 // 배열 method 에는 반드시 key prop 을 가져야한다. 
+
 // map method 에서 render 한 child 는 고유한 key prop 을 가져야한다. 
 // 이떄 해당하는 최상위 태그에 key 를 설정해주면 된다. 대부분 json data 의 id 를 사용해주는 게 좋다
 // 배열의 index 를 key 로 사용하면 안되는 이유는 그때그때 배열의 순서에 따라서 바뀌기 때문이다.
 // 즉, DATA 에 부여된 고유한 값이 아니기 때문이다. 
+
 // key 를 잘 지정해야하는 이유 
 // key 로 고유한 값을 지정해주면 수정 전과 후를 결과만 보고도 어떤 과정이 있었는지 알 수 있다. 
 // 배열의 변화를 react 에 정확하게 전달해주기 위해서이다. 
