@@ -8,6 +8,7 @@ function formatDate(value) {
   return `${date.getFullYear()}. ${date.getMonth() + 1}. ${date.getDate()}`
 }
 
+
 // ReviewListItem 은 item prop 과 onDelete prop 을 받는데, 
 // ReviewListItem 은 각 영화의 div 를 만든다. 
 function ReviewListItem({ item, onDelete }) {
