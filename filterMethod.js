@@ -1,11 +1,13 @@
 // filter : 각 요소마다 callback 함수를 실행해서 return 값이 true 인 값만 걸러내는 method 
 
+
 // ReviewList.js (ReviewList component )
 import './ReviewList.css'
 function formatDate(value) { 
   const date = new Date(value);
   return `${date.getFullYear()}. ${date.getMonth() + 1}. ${date.getDate()}`
 }
+
 // ReviewListItem 은 item prop 과 onDelete prop 을 받는데, 
 // ReviewListItem 은 각 영화의 div 를 만든다. 
 function ReviewListItem({ item, onDelete }) {
@@ -25,6 +27,7 @@ function ReviewListItem({ item, onDelete }) {
     </div>
   );
 }
+
 
 // prop 으로 items 라는 배열을 받는 ReviewList component
 // 각 영화의 리스트를 짠 RiviewListItem 을 배열로 다루어서 이 div 의 배열은 만드는 component 이다.
@@ -67,6 +70,7 @@ function App() {
   const handleNewestClick = () => setOrder('createdAt')
   const handleBestClick = () => setOrder('rating')
   
+
   // ReviewList component 에서 handleDeleteClcik 함수는 item 의 id 를 삭제하면, 
   // 그 div 의 id 가 사라진거지, 모든 것이 사라진 것이 아닌데, 원래의 items 의 각 id 와 삭제된 id 가 같지 않으면,
   // filter method 를 통해서 true 인 값만은 callback 하는 함수 를 통해서 삭제한 state 를 nextItems 에 저장하여, browser 에 보여준다. 
