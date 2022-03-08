@@ -3,7 +3,7 @@ import { userState } from 'react'
 
 function App() {  
   const [num, setNum] = useState(1); // useState 함수는 파라미터로 초기값을 전달받음
-                                     // 이 함수가 실행되면 배열의 형태로 요소 두개를 리턴하게 된다.(state, setter)
+                                     // 이 함수가 실행되면 배열의 형태로 요소 두개를 리턴하게 된다.(state -num , setter - setNum )
                                      // 그래서 destructuring 문법으로 사용해야함.
                                      // 배열의 첫 번째 요소는 state 값이다. : 현재 변수의 값을 나타내는 것이다. 
                                      // 배열의 두 번째 요소는 setter 함수이다. : 이 함수는 호출할 때 파라미터로 전달하는 값으로 state 값이 변경이 되는 것이다.
