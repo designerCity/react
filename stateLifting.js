@@ -12,6 +12,7 @@ function Board({ name, color}) {
 //   const [num, setNum] = useState(1);
 //   const [sum, setSum] = useState(0);
 //   const [gameHistory, setGameHistory] = useState([]); 이렇게 자식 component 의 state 들을 부모 component 로 올려 주는 것을 state lifting 이라고 한다. 
+//   
 //   // 추가기능 던지기
 //   const handleRollClick =() => {
 //     const nextNum = random(6);
