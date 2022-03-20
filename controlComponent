@@ -1,0 +1,10 @@
+// 제어 컴포넌트 (Controlled Component )
+// 앞에서 state 를 생성하고, value prop 으로 state 를 내려줬다. 
+// 또한, onChange prop 으로 state 를 변경하는 핸들러 함수를 내려줬었다.
+// 이렇게 하면 react state 와 input 의 value 를 일치시킬 수 있다. 
+// : input 의 value 값을 react 에서 지정한다는 의미이다. 
+// 항상 input 값과 value state의 값이 일치함.
+// -> 동작을 예측하기가 쉽고, 실제로 input 값에서 쉽게 수정이 가능하다. 
+
+// 비제어 컴포넌트 ( Uncontrolled Component )
+// 인풋의 value 값을 react 에서 지정하지 않는 component 
